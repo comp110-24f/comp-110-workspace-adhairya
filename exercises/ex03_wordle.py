@@ -7,7 +7,7 @@ def input_guess(secret_word_len: int) -> str:
     """Function that ensures that the length of the guess of someone playing the game matches with the length of the secret word"""
     word_choice: str = input(f"Enter a {secret_word_len} character word: ")
     while len(word_choice) != secret_word_len:
-        # A while loop that checkes if the length of a users guess is not equal to that of the secret word
+        # A while loop that checks if the length of a users guess is not equal to that of the secret word
         print(f"That wasn't {secret_word_len} chars! Try again:")
         word_choice = input()
         # The while loop repeatedly asks for input of a new guess until the length matches the length of the secret word
