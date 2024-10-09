@@ -4,8 +4,12 @@ __author__ = "730744596"
 
 
 def w_sum(vals: list[float]) -> float:
-    sum: float = vals[0]
-    index: int = 1
+    sum: float = 0.0
+    index: int = 0
+
+    if len(vals) == 0:
+        return 0.0
+
     while index < len(vals):
         sum += vals[index]
         index += 1
